@@ -1,0 +1,876 @@
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: [code=1] esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/Users/sony/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20250707/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2.6-1089-gbc2a328c96\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/sony/esp/esp-idf/examples/DeepSleep/build/config -I/Users/sony/esp/esp-idf/examples/DeepSleep/main -I/Users/sony/esp/esp-idf/components/newlib/platform_include -I/Users/sony/esp/esp-idf/components/freertos/config/include -I/Users/sony/esp/esp-idf/components/freertos/config/include/freertos -I/Users/sony/esp/esp-idf/components/freertos/config/riscv/include -I/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/Users/sony/esp/esp-idf/components/freertos/esp_additions/include -I/Users/sony/esp/esp-idf/components/esp_hw_support/include -I/Users/sony/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/sony/esp/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/Users/sony/esp/esp-idf/components/esp_hw_support/port/esp32c6/. -I/Users/sony/esp/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/Users/sony/esp/esp-idf/components/heap/include -I/Users/sony/esp/esp-idf/components/log/include -I/Users/sony/esp/esp-idf/components/soc/include -I/Users/sony/esp/esp-idf/components/soc/esp32c6 -I/Users/sony/esp/esp-idf/components/soc/esp32c6/include -I/Users/sony/esp/esp-idf/components/hal/platform_port/include -I/Users/sony/esp/esp-idf/components/hal/esp32c6/include -I/Users/sony/esp/esp-idf/components/hal/include -I/Users/sony/esp/esp-idf/components/esp_rom/include -I/Users/sony/esp/esp-idf/components/esp_rom/include/esp32c6 -I/Users/sony/esp/esp-idf/components/esp_rom/esp32c6 -I/Users/sony/esp/esp-idf/components/esp_common/include -I/Users/sony/esp/esp-idf/components/esp_system/include -I/Users/sony/esp/esp-idf/components/esp_system/port/soc -I/Users/sony/esp/esp-idf/components/esp_system/port/include/riscv -I/Users/sony/esp/esp-idf/components/esp_system/port/include/private -I/Users/sony/esp/esp-idf/components/riscv/include -I/Users/sony/esp/esp-idf/components/lwip/include -I/Users/sony/esp/esp-idf/components/lwip/include/apps -I/Users/sony/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/sony/esp/esp-idf/components/lwip/lwip/src/include -I/Users/sony/esp/esp-idf/components/lwip/port/include -I/Users/sony/esp/esp-idf/components/lwip/port/freertos/include -I/Users/sony/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/sony/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/sony/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/sony/esp/esp-idf/components/esp_ringbuf/include -I/Users/sony/esp/esp-idf/components/efuse/include -I/Users/sony/esp/esp-idf/components/efuse/esp32c6/include -I/Users/sony/esp/esp-idf/components/esp_mm/include -I/Users/sony/esp/esp-idf/components/driver/include -I/Users/sony/esp/esp-idf/components/driver/deprecated -I/Users/sony/esp/esp-idf/components/driver/analog_comparator/include -I/Users/sony/esp/esp-idf/components/driver/dac/include -I/Users/sony/esp/esp-idf/components/driver/gpio/include -I/Users/sony/esp/esp-idf/components/driver/gptimer/include -I/Users/sony/esp/esp-idf/components/driver/i2c/include -I/Users/sony/esp/esp-idf/components/driver/i2s/include -I/Users/sony/esp/esp-idf/components/driver/ledc/include -I/Users/sony/esp/esp-idf/components/driver/mcpwm/include -I/Users/sony/esp/esp-idf/components/driver/parlio/include -I/Users/sony/esp/esp-idf/components/driver/pcnt/include -I/Users/sony/esp/esp-idf/components/driver/rmt/include -I/Users/sony/esp/esp-idf/components/driver/sdio_slave/include -I/Users/sony/esp/esp-idf/components/driver/sdmmc/include -I/Users/sony/esp/esp-idf/components/driver/sigma_delta/include -I/Users/sony/esp/esp-idf/components/driver/spi/include -I/Users/sony/esp/esp-idf/components/driver/temperature_sensor/include -I/Users/sony/esp/esp-idf/components/driver/touch_sensor/include -I/Users/sony/esp/esp-idf/components/driver/twai/include -I/Users/sony/esp/esp-idf/components/driver/uart/include -I/Users/sony/esp/esp-idf/components/driver/usb_serial_jtag/include -I/Users/sony/esp/esp-idf/components/esp_pm/include -I/Users/sony/esp/esp-idf/components/mbedtls/port/include -I/Users/sony/esp/esp-idf/components/mbedtls/mbedtls/include -I/Users/sony/esp/esp-idf/components/mbedtls/mbedtls/library -I/Users/sony/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/sony/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/sony/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/sony/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/sony/esp/esp-idf/components/esp_bootloader_format/include -I/Users/sony/esp/esp-idf/components/esp_app_format/include -I/Users/sony/esp/esp-idf/components/bootloader_support/include -I/Users/sony/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/sony/esp/esp-idf/components/esp_partition/include -I/Users/sony/esp/esp-idf/components/app_update/include -I/Users/sony/esp/esp-idf/components/spi_flash/include -I/Users/sony/esp/esp-idf/components/pthread/include -I/Users/sony/esp/esp-idf/components/esp_timer/include -I/Users/sony/esp/esp-idf/components/app_trace/include -I/Users/sony/esp/esp-idf/components/esp_event/include -I/Users/sony/esp/esp-idf/components/nvs_flash/include -I/Users/sony/esp/esp-idf/components/esp_phy/include -I/Users/sony/esp/esp-idf/components/esp_phy/esp32c6/include -I/Users/sony/esp/esp-idf/components/vfs/include -I/Users/sony/esp/esp-idf/components/esp_netif/include -I/Users/sony/esp/esp-idf/components/wpa_supplicant/include -I/Users/sony/esp/esp-idf/components/wpa_supplicant/port/include -I/Users/sony/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/Users/sony/esp/esp-idf/components/esp_coex/include -I/Users/sony/esp/esp-idf/components/esp_wifi/include -I/Users/sony/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/Users/sony/esp/esp-idf/components/esp_gdbstub/include -I/Users/sony/esp/esp-idf/components/unity/include -I/Users/sony/esp/esp-idf/components/unity/unity/src -I/Users/sony/esp/esp-idf/components/cmock/CMock/src -I/Users/sony/esp/esp-idf/components/console -I/Users/sony/esp/esp-idf/components/http_parser -I/Users/sony/esp/esp-idf/components/esp-tls -I/Users/sony/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/Users/sony/esp/esp-idf/components/esp_adc/include -I/Users/sony/esp/esp-idf/components/esp_adc/interface -I/Users/sony/esp/esp-idf/components/esp_adc/esp32c6/include -I/Users/sony/esp/esp-idf/components/esp_adc/deprecated/include -I/Users/sony/esp/esp-idf/components/esp_eth/include -I/Users/sony/esp/esp-idf/components/esp_hal_ieee802154/include -I/Users/sony/esp/esp-idf/components/esp_hal_ieee802154/esp32c6/include -I/Users/sony/esp/esp-idf/components/esp_hid/include -I/Users/sony/esp/esp-idf/components/tcp_transport/include -I/Users/sony/esp/esp-idf/components/esp_http_client/include -I/Users/sony/esp/esp-idf/components/esp_http_server/include -I/Users/sony/esp/esp-idf/components/esp_https_ota/include -I/Users/sony/esp/esp-idf/components/esp_psram/include -I/Users/sony/esp/esp-idf/components/esp_lcd/include -I/Users/sony/esp/esp-idf/components/esp_lcd/interface -I/Users/sony/esp/esp-idf/components/protobuf-c/protobuf-c -I/Users/sony/esp/esp-idf/components/protocomm/include/common -I/Users/sony/esp/esp-idf/components/protocomm/include/security -I/Users/sony/esp/esp-idf/components/protocomm/include/transports -I/Users/sony/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/Users/sony/esp/esp-idf/components/protocomm/proto-c -I/Users/sony/esp/esp-idf/components/esp_local_ctrl/include -I/Users/sony/esp/esp-idf/components/espcoredump/include -I/Users/sony/esp/esp-idf/components/espcoredump/include/port/riscv -I/Users/sony/esp/esp-idf/components/wear_levelling/include -I/Users/sony/esp/esp-idf/components/sdmmc/include -I/Users/sony/esp/esp-idf/components/fatfs/diskio -I/Users/sony/esp/esp-idf/components/fatfs/src -I/Users/sony/esp/esp-idf/components/fatfs/vfs -I/Users/sony/esp/esp-idf/components/idf_test/include -I/Users/sony/esp/esp-idf/components/idf_test/include/esp32c6 -I/Users/sony/esp/esp-idf/components/ieee802154/include -I/Users/sony/esp/esp-idf/components/json/cJSON -I/Users/sony/esp/esp-idf/components/mqtt/esp-mqtt/include -I/Users/sony/esp/esp-idf/components/nvs_sec_provider/include -I/Users/sony/esp/esp-idf/components/spiffs/include -I/Users/sony/esp/esp-idf/components/wifi_provisioning/include -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/sony/esp/esp-idf/examples/DeepSleep=. -fmacro-prefix-map=/Users/sony/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c /Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c
+In file included from /Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:4:
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:38:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   38 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from /Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:41:
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:66:6: error: #error "FreeRTOS.h must be included before list.h"
+   66 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:151:25: error: unknown type name 'TickType_t'
+  151 |     configLIST_VOLATILE TickType_t xItemValue;          /*< The value being listed.  In most cases this is used to sort the list in ascending order. */
+      |                         ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:179:14: error: unknown type name 'UBaseType_t'
+  179 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h: In function 'vListInitialise':
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:47: error: expected declaration specifiers before 'PRIVILEGED_FUNCTION'
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:448:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  448 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:462:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  462 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:484:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  484 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:1: error: unknown type name 'UBaseType_t'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      |                                                               ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:92:1: warning: empty declaration
+   92 | struct tskTaskControlBlock; /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:93:38: error: storage class specified for parameter 'TaskHandle_t'
+   93 | typedef struct tskTaskControlBlock * TaskHandle_t;
+      |                                      ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:99:21: error: expected declaration specifiers or '...' before '*' token
+   99 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                     ^
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:110:3: error: storage class specified for parameter 'eTaskState'
+  110 | } eTaskState;
+      |   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:120:3: error: storage class specified for parameter 'eNotifyAction'
+  120 | } eNotifyAction;
+      |   ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:129:5: error: unknown type name 'BaseType_t'
+  129 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:130:5: error: unknown type name 'TickType_t'
+  130 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:131:3: error: storage class specified for parameter 'TimeOut_t'
+  131 | } TimeOut_t;
+      |   ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:141:3: error: storage class specified for parameter 'MemoryRegion_t'
+  141 | } MemoryRegion_t;
+      |   ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:148:5: error: unknown type name 'TaskFunction_t'
+  148 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: unknown type name 'configSTACK_DEPTH_TYPE'
+  150 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:152:5: error: unknown type name 'UBaseType_t'
+  152 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:153:5: error: unknown type name 'StackType_t'
+  153 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:154:5: error: expected specifier-qualifier-list before 'MemoryRegion_t'
+  154 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |     ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:158:3: error: storage class specified for parameter 'TaskParameters_t'
+  158 | } TaskParameters_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:166:5: error: expected specifier-qualifier-list before 'TaskHandle_t'
+  166 |     TaskHandle_t xHandle;                         /**< The handle of the task to which the rest of the information in the structure relates. */
+      |     ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:182:3: error: storage class specified for parameter 'TaskStatus_t'
+  182 | } TaskStatus_t;
+      |   ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:192:3: error: storage class specified for parameter 'eSleepModeStatus'
+  192 | } eSleepModeStatus;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:746:31: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  746 | void vTaskAllocateMPURegions( TaskHandle_t xTask,
+      |                               ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:747:37: error: type defaults to 'int' in declaration of 'MemoryRegion_t' [-Werror=implicit-int]
+  747 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:747:52: error: expected ';', ',' or ')' before '*' token
+  747 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                    ^
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:785:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  785 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:834:24: error: unknown type name 'TickType_t'
+  834 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:834:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  834 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:896:1: error: unknown type name 'BaseType_t'
+  896 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:896:29: error: unknown type name 'TickType_t'
+  896 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      |                             ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:897:35: error: unknown type name 'TickType_t'
+  897 |                             const TickType_t xTimeIncrement ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:938:1: error: unknown type name 'BaseType_t'
+  938 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:938:29: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  938 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:982:1: error: unknown type name 'UBaseType_t'
+  982 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:982:38: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+  982 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:982:51: error: expected ';', ',' or ')' before 'xTask'
+  982 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:988:1: error: unknown type name 'UBaseType_t'
+  988 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:988:45: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+  988 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:988:58: error: expected ';', ',' or ')' before 'xTask'
+  988 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1004:1: error: expected declaration specifiers before 'eTaskState'
+ 1004 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1057:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1057 | void vTaskGetInfo( TaskHandle_t xTask,
+      |                    ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:20: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1058 |                    TaskStatus_t * pxTaskStatus,
+      |                    ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1059:20: error: unknown type name 'BaseType_t'
+ 1059 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1060:20: error: expected declaration specifiers or '...' before 'eTaskState'
+ 1060 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1099:24: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1099 | void vTaskPrioritySet( TaskHandle_t xTask,
+      |                        ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1100:24: error: unknown type name 'UBaseType_t'
+ 1100 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1148:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1148 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1194:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1194 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1220:1: error: unknown type name 'BaseType_t'
+ 1220 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1220:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1220 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1252:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1252 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1305:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1305 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1355:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1355 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1406:1: error: unknown type name 'BaseType_t'
+ 1406 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1406:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1406 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1418:1: error: unknown type name 'TickType_t'
+ 1418 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1418:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1418 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1431:1: error: unknown type name 'TickType_t'
+ 1431 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1431:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1431 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1442:1: error: unknown type name 'UBaseType_t'
+ 1442 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1442:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1442 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1452:23: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1452 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                       ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1465:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1465 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      | ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1513:1: error: unknown type name 'UBaseType_t'
+ 1513 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1513:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1513 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1538:1: error: unknown type name 'configSTACK_DEPTH_TYPE'
+ 1538 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1538:54: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1538 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1641:1: error: unknown type name 'BaseType_t'
+ 1641 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1641:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1641 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1651:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1651 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1750:1: error: unknown type name 'UBaseType_t'
+ 1750 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1750:35: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1750 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      |                                   ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1751:41: error: unknown type name 'UBaseType_t'
+ 1751 |                                   const UBaseType_t uxArraySize,
+      |                                         ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1752:35: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1752 |                                   configRUN_TIME_COUNTER_TYPE * const pulTotalRunTime ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1798:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1798 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1849:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1849 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1886 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1886 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1887:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1887 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1887:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1887 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1992:1: error: unknown type name 'BaseType_t'
+ 1992 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1992:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1992 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |                                ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1993:32: error: unknown type name 'UBaseType_t'
+ 1993 |                                UBaseType_t uxIndexToNotify,
+      |                                ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1995:32: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 1995 |                                eNotifyAction eAction,
+      |                                ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:1: error: unknown type name 'BaseType_t'
+ 2136 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:39: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2136 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |                                       ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2137:39: error: unknown type name 'UBaseType_t'
+ 2137 |                                       UBaseType_t uxIndexToNotify,
+      |                                       ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2139:39: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 2139 |                                       eNotifyAction eAction,
+      |                                       ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2141:39: error: unknown type name 'BaseType_t'
+ 2141 |                                       BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2271:1: error: unknown type name 'BaseType_t'
+ 2271 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2271:36: error: unknown type name 'UBaseType_t'
+ 2271 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      |                                    ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2275:36: error: unknown type name 'TickType_t'
+ 2275 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2427:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2427 | void vTaskGenericNotifyGiveFromISR( TaskHandle_t xTaskToNotify,
+      |                                     ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2428:37: error: unknown type name 'UBaseType_t'
+ 2428 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2429:37: error: unknown type name 'BaseType_t'
+ 2429 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2527:35: error: unknown type name 'UBaseType_t'
+ 2527 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2528:35: error: unknown type name 'BaseType_t'
+ 2528 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2529:35: error: unknown type name 'TickType_t'
+ 2529 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2586:1: error: unknown type name 'BaseType_t'
+ 2586 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2586:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2586 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2587:42: error: unknown type name 'UBaseType_t'
+ 2587 |                                          UBaseType_t uxIndexToClear ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2644:41: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2644 | uint32_t ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+      |                                         ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2645:41: error: unknown type name 'UBaseType_t'
+ 2645 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2661:28: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2661 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                            ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2741:1: error: unknown type name 'BaseType_t'
+ 2741 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2741:34: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2741 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      |                                  ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2742:34: error: unknown type name 'TickType_t'
+ 2742 |                                  TickType_t * const pxTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2765:1: error: unknown type name 'BaseType_t'
+ 2765 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2765:31: error: unknown type name 'TickType_t'
+ 2765 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2792:1: error: unknown type name 'BaseType_t'
+ 2792 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2792:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2792 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2826:35: error: unknown type name 'TickType_t'
+ 2826 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2826:61: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2826 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2828:44: error: unknown type name 'TickType_t'
+ 2828 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2829:44: error: unknown type name 'TickType_t'
+ 2829 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2829:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2829 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2843:39: error: unknown type name 'TickType_t'
+ 2843 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2844:45: error: unknown type name 'BaseType_t'
+ 2844 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2870:1: error: unknown type name 'BaseType_t'
+ 2870 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2870:73: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2870 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      |                                                                         ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2872:47: error: unknown type name 'TickType_t'
+ 2872 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2872:71: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2872 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2882:1: error: expected declaration specifiers before 'portDONT_DISCARD'
+ 2882 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2888:1: error: unknown type name 'TickType_t'
+ 2888 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2888:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2888 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2893:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2893 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2899:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2899 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2905:1: error: unknown type name 'BaseType_t'
+ 2905 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2905:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2905 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2911:1: error: unknown type name 'BaseType_t'
+ 2911 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2911:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2911 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2917:1: error: unknown type name 'BaseType_t'
+ 2917 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2917:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2917 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2927:43: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2927 | void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder,
+      |                                           ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2928:43: error: unknown type name 'UBaseType_t'
+ 2928 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2933:1: error: unknown type name 'UBaseType_t'
+ 2933 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2933:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2933 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2939:26: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2939 | void vTaskSetTaskNumber( TaskHandle_t xTask,
+      |                          ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2940:32: error: unknown type name 'UBaseType_t'
+ 2940 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2950:21: error: unknown type name 'TickType_t'
+ 2950 | void vTaskStepTick( TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                     ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2966:1: error: expected declaration specifiers before 'eSleepModeStatus'
+ 2966 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2972:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2972 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2978:36: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2978 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~
+In file included from /Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:10,
+                 from /Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:5:
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_err.h:19:13: error: storage class specified for parameter 'esp_err_t'
+   19 | typedef int esp_err_t;
+      |             ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_err.h:59:29: error: expected declaration specifiers or '...' before 'esp_err_t'
+   59 | const char *esp_err_to_name(esp_err_t code);
+      |                             ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_err.h:77:31: error: expected declaration specifiers or '...' before 'esp_err_t'
+   77 | const char *esp_err_to_name_r(esp_err_t code, char *buf, size_t buflen);
+      |                               ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_err.h:80:30: error: expected declaration specifiers or '...' before 'esp_err_t'
+   80 | void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const char *function, const char *expression) __attribute__((__noreturn__));
+      |                              ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_err.h:82:44: error: expected declaration specifiers or '...' before 'esp_err_t'
+   82 | void _esp_error_check_failed_without_abort(esp_err_t rc, const char *file, int line, const char *function, const char *expression);
+      |                                            ^~~~~~~~~
+In file included from /Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:12:
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:40:3: error: storage class specified for parameter 'touch_pad_t'
+   40 | } touch_pad_t;
+      |   ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:50:3: error: storage class specified for parameter 'touch_high_volt_t'
+   50 | } touch_high_volt_t;
+      |   ^~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:60:3: error: storage class specified for parameter 'touch_low_volt_t'
+   60 | } touch_low_volt_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:70:3: error: storage class specified for parameter 'touch_volt_atten_t'
+   70 | } touch_volt_atten_t;
+      |   ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:83:3: error: storage class specified for parameter 'touch_cnt_slope_t'
+   83 | } touch_cnt_slope_t;
+      |   ^~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:91:3: error: storage class specified for parameter 'touch_tie_opt_t'
+   91 | } touch_tie_opt_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:98:3: error: storage class specified for parameter 'touch_fsm_mode_t'
+   98 | } touch_fsm_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:106:3: error: storage class specified for parameter 'touch_trigger_mode_t'
+  106 | } touch_trigger_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:112:3: error: storage class specified for parameter 'touch_trigger_src_t'
+  112 | } touch_trigger_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:173:3: error: storage class specified for parameter 'touch_pad_intr_mask_t'
+  173 | } touch_pad_intr_mask_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:181:3: error: storage class specified for parameter 'touch_pad_denoise_grade_t'
+  181 | } touch_pad_denoise_grade_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:193:3: error: storage class specified for parameter 'touch_pad_denoise_cap_t'
+  193 | } touch_pad_denoise_cap_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:197:5: error: expected specifier-qualifier-list before 'touch_pad_denoise_grade_t'
+  197 |     touch_pad_denoise_grade_t grade;    /*!<Select denoise range of denoise channel.
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:204:3: error: storage class specified for parameter 'touch_pad_denoise_t'
+  204 | } touch_pad_denoise_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:217:3: error: storage class specified for parameter 'touch_pad_shield_driver_t'
+  217 | } touch_pad_shield_driver_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:221:5: error: expected specifier-qualifier-list before 'touch_pad_t'
+  221 |     touch_pad_t guard_ring_pad;             /*!<Waterproof. Select touch channel use for guard pad.
+      |     ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:228:3: error: storage class specified for parameter 'touch_pad_waterproof_t'
+  228 | } touch_pad_waterproof_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:238:3: error: storage class specified for parameter 'touch_pad_conn_type_t'
+  238 | } touch_pad_conn_type_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:256:3: error: storage class specified for parameter 'touch_filter_mode_t'
+  256 | } touch_filter_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:270:3: error: storage class specified for parameter 'touch_smooth_mode_t'
+  270 | } touch_smooth_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:274:5: error: expected specifier-qualifier-list before 'touch_filter_mode_t'
+  274 |     touch_filter_mode_t mode;   /*!<Set filter mode. The input of the filter is the raw value of touch reading,
+      |     ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:287:3: error: storage class specified for parameter 'touch_filter_config_t'
+  287 | } touch_filter_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:291:5: error: expected specifier-qualifier-list before 'touch_pad_t'
+  291 |     touch_pad_t touch_num;          /*!<Set touch channel number for sleep pad.
+      |     ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:295:3: error: storage class specified for parameter 'touch_pad_sleep_channel_t'
+  295 | } touch_pad_sleep_channel_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:10,
+                 from /Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:13:
+/Users/sony/esp/esp-idf/components/soc/esp32c6/include/soc/gpio_num.h:50:3: error: storage class specified for parameter 'gpio_num_t'
+   50 | } gpio_num_t;
+      |   ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:88:3: error: storage class specified for parameter 'gpio_int_type_t'
+   88 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:104:3: error: storage class specified for parameter 'gpio_mode_t'
+  104 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:109:3: error: storage class specified for parameter 'gpio_pullup_t'
+  109 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:114:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  114 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:121:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  121 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/hal/include/hal/gpio_types.h:130:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  130 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:24:16: error: storage class specified for parameter 'esp_deep_sleep_cb_t'
+   24 | typedef void (*esp_deep_sleep_cb_t)(void);
+      |                ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:41:3: error: storage class specified for parameter 'esp_sleep_ext1_wakeup_mode_t'
+   41 | } esp_sleep_ext1_wakeup_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:49:3: error: storage class specified for parameter 'esp_deepsleep_gpio_wake_up_mode_t'
+   49 | } esp_deepsleep_gpio_wake_up_mode_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:88:3: error: storage class specified for parameter 'esp_sleep_pd_domain_t'
+   88 | } esp_sleep_pd_domain_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:99:3: error: storage class specified for parameter 'esp_sleep_pd_option_t'
+   99 | } esp_sleep_pd_option_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:120:3: error: storage class specified for parameter 'esp_sleep_source_t'
+  120 | } esp_sleep_source_t;
+      |   ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:128:3: error: storage class specified for parameter 'esp_sleep_mode_t'
+  128 | } esp_sleep_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:131:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'esp_sleep_wakeup_cause_t'
+  131 | typedef esp_sleep_source_t esp_sleep_wakeup_cause_t;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:133:1: warning: empty declaration
+  133 | enum {
+      | ^~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:154:1: error: expected declaration specifiers before 'esp_err_t'
+  154 | esp_err_t esp_sleep_disable_wakeup_source(esp_sleep_source_t source);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:166:1: error: expected declaration specifiers before 'esp_err_t'
+  166 | esp_err_t esp_sleep_enable_ulp_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:181:1: error: expected declaration specifiers before 'esp_err_t'
+  181 | esp_err_t esp_sleep_enable_timer_wakeup(uint64_t time_in_us);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:219:37: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  219 | bool esp_sleep_is_valid_wakeup_gpio(gpio_num_t gpio_num);
+      |                                     ^~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:300:1: error: expected declaration specifiers before 'esp_err_t'
+  300 | esp_err_t esp_sleep_enable_ext1_wakeup(uint64_t io_mask, esp_sleep_ext1_wakeup_mode_t level_mode);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:351:1: error: expected declaration specifiers before 'esp_err_t'
+  351 | esp_err_t esp_sleep_enable_ext1_wakeup_io(uint64_t io_mask, esp_sleep_ext1_wakeup_mode_t level_mode);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:369:1: error: expected declaration specifiers before 'esp_err_t'
+  369 | esp_err_t esp_sleep_disable_ext1_wakeup_io(uint64_t io_mask);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:409:1: error: expected declaration specifiers before 'esp_err_t'
+  409 | esp_err_t esp_sleep_enable_ext1_wakeup_with_level_mask(uint64_t io_mask, uint64_t level_mask);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:443:1: error: expected declaration specifiers before 'esp_err_t'
+  443 | esp_err_t esp_deep_sleep_enable_gpio_wakeup(uint64_t gpio_pin_mask, esp_deepsleep_gpio_wake_up_mode_t mode);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:469:1: error: expected declaration specifiers before 'esp_err_t'
+  469 | esp_err_t esp_sleep_enable_gpio_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:488:1: error: expected declaration specifiers before 'esp_err_t'
+  488 | esp_err_t esp_sleep_enable_uart_wakeup(int uart_num);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:496:1: error: expected declaration specifiers before 'esp_err_t'
+  496 | esp_err_t esp_sleep_enable_bt_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:504:1: error: expected declaration specifiers before 'esp_err_t'
+  504 | esp_err_t esp_sleep_disable_bt_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:511:1: error: expected declaration specifiers before 'esp_err_t'
+  511 | esp_err_t esp_sleep_enable_wifi_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:518:1: error: expected declaration specifiers before 'esp_err_t'
+  518 | esp_err_t esp_sleep_disable_wifi_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:525:1: error: expected declaration specifiers before 'esp_err_t'
+  525 | esp_err_t esp_sleep_enable_wifi_beacon_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:532:1: error: expected declaration specifiers before 'esp_err_t'
+  532 | esp_err_t esp_sleep_disable_wifi_beacon_wakeup(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:565:1: error: expected declaration specifiers before 'esp_err_t'
+  565 | esp_err_t esp_sleep_pd_config(esp_sleep_pd_domain_t domain,
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:580:1: error: expected declaration specifiers before 'esp_err_t'
+  580 | esp_err_t esp_deep_sleep_try_to_start(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:600:1: error: expected declaration specifiers before 'esp_err_t'
+  600 | esp_err_t esp_light_sleep_start(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:623:1: error: expected declaration specifiers before 'esp_err_t'
+  623 | esp_err_t esp_deep_sleep_try(uint64_t time_in_us);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:654:1: error: expected declaration specifiers before 'esp_err_t'
+  654 | esp_err_t esp_deep_sleep_register_hook(esp_deep_sleep_cb_t new_dslp_cb);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:661:37: error: expected declaration specifiers or '...' before 'esp_deep_sleep_cb_t'
+  661 | void esp_deep_sleep_deregister_hook(esp_deep_sleep_cb_t old_dslp_cb);
+      |                                     ^~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:671:1: error: unknown type name 'esp_sleep_wakeup_cause_t'
+  671 | esp_sleep_wakeup_cause_t esp_sleep_get_wakeup_cause(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:698:16: error: storage class specified for parameter 'esp_deep_sleep_wake_stub_fn_t'
+  698 | typedef void (*esp_deep_sleep_wake_stub_fn_t)(void);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:711:35: error: expected declaration specifiers or '...' before 'esp_deep_sleep_wake_stub_fn_t'
+  711 | void esp_set_deep_sleep_wake_stub(esp_deep_sleep_wake_stub_fn_t new_stub);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:723:1: error: expected declaration specifiers before 'esp_deep_sleep_wake_stub_fn_t'
+  723 | esp_deep_sleep_wake_stub_fn_t esp_get_deep_sleep_wake_stub(void);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:767:1: error: expected declaration specifiers before 'esp_err_t'
+  767 | esp_err_t esp_sleep_cpu_retention_init(void);
+      | ^~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_hw_support/include/esp_sleep.h:777:1: error: expected declaration specifiers before 'esp_err_t'
+  777 | esp_err_t esp_sleep_cpu_retention_deinit(void);
+      | ^~~~~~~~~
+In file included from /Users/sony/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:10,
+                 from /Users/sony/esp/esp-idf/components/log/include/esp_log.h:14,
+                 from /Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:6:
+/Users/sony/esp/esp-idf/components/soc/esp32c6/include/soc/reset_reasons.h:50:3: error: storage class specified for parameter 'soc_reset_reason_t'
+   50 | } soc_reset_reason_t;
+      |   ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:71:1: error: expected declaration specifiers before 'soc_reset_reason_t'
+   71 | soc_reset_reason_t esp_rom_get_reset_reason(int cpu_no);
+      | ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:31:3: error: storage class specified for parameter 'esp_log_level_t'
+   31 | } esp_log_level_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:33:15: error: storage class specified for parameter 'vprintf_like_t'
+   33 | typedef int (*vprintf_like_t)(const char *, va_list);
+      |               ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:42:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'esp_log_default_level'
+   42 | extern esp_log_level_t esp_log_default_level;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:87:41: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   87 | void esp_log_level_set(const char* tag, esp_log_level_t level);
+      |                                         ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:97:1: error: expected declaration specifiers before 'esp_log_level_t'
+   97 | esp_log_level_t esp_log_level_get(const char* tag);
+      | ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:113:1: error: expected declaration specifiers before 'vprintf_like_t'
+  113 | vprintf_like_t esp_log_set_vprintf(vprintf_like_t func);
+      | ^~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:162:20: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  162 | void esp_log_write(esp_log_level_t level, const char* tag, const char* format, ...) __attribute__ ((format (printf, 3, 4)));
+      |                    ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log.h:171:21: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  171 | void esp_log_writev(esp_log_level_t level, const char* tag, const char* format, va_list args);
+      |                     ^~~~~~~~~~~~~~~
+In file included from /Users/sony/esp/esp-idf/components/log/include/esp_log.h:175:
+/Users/sony/esp/esp-idf/components/log/include/esp_log_internal.h:11:90: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   11 | void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                          ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log_internal.h:12:91: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   12 | void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                           ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/log/include/esp_log_internal.h:13:95: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   13 | void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
+      |                                                                                               ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:8:20: error: storage class specified for parameter 'TAG'
+    8 | static const char *TAG = "BLE_BEACON";
+      |                    ^~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:8:1: error: parameter 'TAG' is initialized
+    8 | static const char *TAG = "BLE_BEACON";
+      | ^~~~~~
+In file included from /Users/sony/esp/esp-idf/components/hal/include/hal/touch_sensor_types.h:12:
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_attr.h:178:46: error: expected declaration specifiers before '__attribute__'
+  178 | #define _SECTION_ATTR_IMPL(SECTION, COUNTER) __attribute__((section(SECTION "." _COUNTER_STRINGIFY(COUNTER))))
+      |                                              ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_attr.h:74:23: note: in expansion of macro '_SECTION_ATTR_IMPL'
+   74 | #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+      |                       ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:14:1: note: in expansion of macro 'RTC_DATA_ATTR'
+   14 | RTC_DATA_ATTR int boot_count = 0;
+      | ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_attr.h:178:46: error: expected declaration specifiers before '__attribute__'
+  178 | #define _SECTION_ATTR_IMPL(SECTION, COUNTER) __attribute__((section(SECTION "." _COUNTER_STRINGIFY(COUNTER))))
+      |                                              ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/components/esp_common/include/esp_attr.h:74:23: note: in expansion of macro '_SECTION_ATTR_IMPL'
+   74 | #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+      |                       ^~~~~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:15:1: note: in expansion of macro 'RTC_DATA_ATTR'
+   15 | RTC_DATA_ATTR float simulated_temperature = 20.0f;
+      | ^~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:18:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   18 | {
+      | ^
+/Users/sony/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:6: error: old-style parameter declarations in prototyped function definition
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |      ^~~~~~~~~~~~~~~
+/Users/sony/esp/esp-idf/examples/DeepSleep/main/main.c:56: error: expected '{' at end of input
+cc1: some warnings being treated as errors
+[2/10] Performing build step for 'bootloader'
+[1/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[2/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[3/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[4/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[5/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[6/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[7/109] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_noos.c.obj
+[8/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj
+[9/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_hp_regi2c_esp32c6.c.obj
+[10/109] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[11/109] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+[12/109] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
+[13/109] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[14/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/esp_cpu_intr.c.obj
+[15/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/cpu_region_protect.c.obj
+[16/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[17/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[18/109] Linking C static library esp-idf/log/liblog.a
+[19/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/chip_info.c.obj
+[20/109] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[21/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_table.c.obj
+[22/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_param.c.obj
+[23/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/ocode_init.c.obj
+[24/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_fields.c.obj
+[25/109] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[26/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_rtc_calib.c.obj
+[27/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_clk_init.c.obj
+[28/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[29/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_init.c.obj
+[30/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_utility.c.obj
+[31/109] Linking C static library esp-idf/esp_common/libesp_common.a
+[32/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_time.c.obj
+[33/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[34/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[35/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[36/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[37/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[38/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[39/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[40/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[41/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[42/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_clk.c.obj
+[43/109] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_sleep.c.obj
+[44/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[45/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32c6.c.obj
+[46/109] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[47/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_ecdsa.c.obj
+[48/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[49/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32c6.c.obj
+[50/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[51/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[52/109] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[53/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[54/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[55/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_sha.c.obj
+[56/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[57/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_soc.c.obj
+[58/109] Building C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj
+[59/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[60/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[61/109] Linking C static library esp-idf/esp_system/libesp_system.a
+[62/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lp_timer_hal.c.obj
+[63/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[64/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[65/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj
+[66/109] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[67/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32c6/efuse_hal.c.obj
+[68/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_esp32c6.c.obj
+[69/109] Linking C static library esp-idf/efuse/libefuse.a
+[70/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[71/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/interrupts.c.obj
+[72/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/uart_periph.c.obj
+[73/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[74/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/gpio_periph.c.obj
+[75/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/dedic_gpio_periph.c.obj
+[76/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/gdma_periph.c.obj
+[77/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/adc_periph.c.obj
+[78/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/spi_periph.c.obj
+[79/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/sdm_periph.c.obj
+[80/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[81/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/pcnt_periph.c.obj
+[82/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/rmt_periph.c.obj
+[83/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/ledc_periph.c.obj
+[84/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/temperature_sensor_periph.c.obj
+[85/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/i2s_periph.c.obj
+[86/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/i2c_periph.c.obj
+[87/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/parlio_periph.c.obj
+[88/109] Generating project_elf_src_esp32c6.c
+[89/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/twai_periph.c.obj
+[90/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/mcpwm_periph.c.obj
+[91/109] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[92/109] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[93/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/timer_periph.c.obj
+[94/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/mpi_periph.c.obj
+[95/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/rtc_io_periph.c.obj
+[96/109] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32c6.c.obj
+[97/109] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/sdio_slave_periph.c.obj
+[98/109] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+[99/109] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[100/109] Linking C static library esp-idf/esp_bootloader_format/libesp_bootloader_format.a
+[101/109] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[102/109] Linking C static library esp-idf/hal/libhal.a
+[103/109] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[104/109] Linking C static library esp-idf/micro-ecc/libmicro-ecc.a
+[105/109] Linking C static library esp-idf/soc/libsoc.a
+[106/109] Linking C static library esp-idf/main/libmain.a
+[107/109] Linking C executable bootloader.elf
+[108/109] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32c6 image...
+Merged 2 ELF sections
+Successfully created esp32c6 image.
+Generated /Users/sony/esp/esp-idf/examples/DeepSleep/build/bootloader/bootloader.bin
+[109/109] cd /Users/sony/esp/esp-idf/examples/DeepSleep/build/bootloader/esp-idf/esptool_py && /Users/sony/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/sony/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/sony/esp/esp-idf/examples/DeepSleep/build/bootloader/bootloader.bin
+Bootloader binary size 0x56e0 bytes. 0x2920 bytes (32%) free.
+ninja: build stopped: subcommand failed.

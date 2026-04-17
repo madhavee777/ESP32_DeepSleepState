@@ -1,0 +1,2 @@
+source /Users/sony/esp/esp-idf/examples/DeepSleep/build/bootloader/gdbinit/symbols
+source /Users/sony/esp/esp-idf/examples/DeepSleep/build/bootloader/gdbinit/connect
