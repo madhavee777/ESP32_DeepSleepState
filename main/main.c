@@ -16,6 +16,7 @@ RTC_DATA_ATTR float simulated_temperature = 20.0f;
 
 void app_main(void)
 {
+    vTaskDelay(pdMS_TO_TICKS(2000));
     // 1. Diagnose WHY we woke up
     esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
 
